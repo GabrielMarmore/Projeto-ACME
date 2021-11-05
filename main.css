@@ -1,1 +1,324 @@
+<<<<<<< HEAD
 /*estilo*/
+=======
+@charset "utf-8";
+
+/*Variaveis paleta de cores e fonte*/
+:root{
+--cor0:#0F1A25;
+--cor1:#8FBFF4;
+--cor2:#B2D2F2;
+--cor3:#3B6A8D;
+--cor4:#D8BB85;
+}
+/*reset*/
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+/*header e menu*/
+	
+header{
+	/*background-image: linear-gradient(to right, var(--cor0) 15%, var(--cor3));*/
+	background-color: var(--cor0);
+	box-shadow: 0 0 15px rgb(0,0,0,0.5);
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+
+	min-width: 285px;
+}
+.container{
+	display: flex;
+}
+
+header.container{
+	flex-wrap: wrap;
+}
+
+header h1{
+	white-space: nowrap;
+
+	margin: 0;
+	padding: 10px;
+
+	color: white;
+	
+	font-family: var(--destaque);
+	font-weight: 400;
+	font-style: normal;
+}
+
+header h1>a{
+	color: #fff;
+}
+
+header h1>a:hover{
+	color: var(--cor4);
+}
+
+nav{
+	margin-left: auto;
+}
+#menu{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+
+#menu>li{
+	margin: 20px 5px; 
+}
+#menu>li>a{
+font-size: 1.2rem;
+text-decoration: none;
+
+color: white;
+
+border-radius:5px;
+
+transition: 0.5s;
+padding: 5px 10px;
+}
+#menu>li>a:hover{
+	color: var(--cor0);
+	background-color: #fff;
+}
+
+
+h2{
+	font-size: 2rem;
+	font-weight: normal;
+
+	color: var(--cor3);
+	
+	margin: 20px;
+	text-align: center;
+}
+section{
+	margin: 20px 5%;
+	/*margin dos lados em % para dar responsividade*/
+	
+	text-align: justify;
+}
+section p{
+	margin: 15px 0;
+	font-size: 1.2rem;
+}
+strong{
+	color: var(--cor3);
+	margin: 0 2px;
+}
+/*Rodapé*/
+footer{
+	background-color: var(--cor0);
+	color: white;
+
+	font-family: var(--padrao);
+	font-size: 1.1rem;
+
+
+	box-shadow: 0 0 10px rgb(0,0,0,0.3);
+}
+
+footer div p:first-child{
+	font-family: var(--destaque);
+	font-size: 1.4rem;
+}
+footer a{
+	color: var(--cor2);
+}
+footer a:hover{
+	text-decoration: underline;
+	color: var(--cor1);
+}
+footer div{
+	padding: 5px 2.5%;
+}
+footer li,ul,p,a{
+	padding-top: 5px;
+}
+
+.logo{
+	margin-left: auto;
+}
+#rodape{
+	text-align: center;
+	margin: 30px 0 0 0;
+	padding-bottom: 15px;
+	
+	font-style: italic;
+}
+
+#rodape p, #rodape a{
+	font-size: 1.2rem;
+
+}
+/*Nacionais e internacionais*/
+
+main{
+	/*responsividade*/
+	max-width: 900px;
+	min-width: 280px;
+	margin: auto;
+
+	margin-bottom: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+
+	line-height: 170%;
+}
+
+main div:first-child>p{
+	margin: 0 5%;
+}
+section{
+	margin: 20px 5%;
+	padding: 20px;
+
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+section h2{
+	margin-bottom: 25px;
+}
+/* Responsividade texto e imagens*/
+section div{
+	max-width: 800px;
+}
+
+section>div:last-child{
+	text-align: center;
+}
+
+section div p, .destinos section div img {
+	width: 100%;
+}
+
+main>div{
+	max-width: 800px;
+	
+	font-size: 1.4em;
+	line-height: 185%;
+	text-align: justify;
+	
+	margin-bottom: 30px;
+
+}
+svg {
+	fill: #000;/*preencher a cor de uma forma SVG.*/
+	width: 24px;
+	height: 12px;
+}
+
+button{
+    padding: 10px;
+    font-size: 1rem;
+}
+table{
+	margin:auto;
+}
+
+th,tr,td{
+	padding: 5px;
+}
+
+th{
+	text-align: center;
+}
+.centralizado{
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+form{
+	max-width: 900px;
+	
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: center;
+	
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+input, textarea{
+    width:100%;
+    margin: 3px 0px;
+    padding: 10px;
+}
+select{
+	padding: 10px;
+	margin: 5px;
+}
+input[type="submit"]{
+    width: auto;
+    margin-top: 10px;
+    padding: 15px 50px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+/* Para celulares e afins*/
+@media (max-width: 760px){
+	html{
+		font-size: 14px;
+	}
+	footer div.container{
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items:flex-start;
+	}
+	footer div.container div{
+		margin: 20px 0;
+		font-size: 1.2rem;
+	}
+
+	#rodape p{
+		margin: 0 10%;
+	}
+	section{
+		margin: 25px 5%;
+	}
+	.destaque>span{
+		display: none;
+	}
+}
+@media (max-width: 400px){
+	html{
+		font-size: 12px;
+	}
+
+	header h1{
+		font-size: 1.5rem;
+	}
+	#menu{
+		margin-right: 0;
+	}
+	#menu>li{
+		margin: 2px; 
+	}
+	#menu>li>a{
+	font-size: 1rem;
+	padding: 5px;
+	}
+	nav{
+		margin: auto;
+	}
+}
+>>>>>>> style
