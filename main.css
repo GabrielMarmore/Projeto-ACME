@@ -105,10 +105,27 @@ section{
 	
 	text-align: justify;
 }
+
 section p{
 	margin: 15px 0;
 	font-size: 1.2rem;
 }
+
+body ul,li {
+	font-size: larger;
+
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
 strong{
 	color: var(--cor3);
 	margin: 0 2px;
