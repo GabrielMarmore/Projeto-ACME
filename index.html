@@ -23,10 +23,13 @@
     <main>
         <section>
 			<div>
-                <label for="site-search">O que você está procurando?</label>
-                <input type="search" id="site-search" name="q" aria-label="Search through site content">
-                <button>Pesquisar</button>
-				<h2>Peça de roupa</h2>
+                <form action="" style="width: 35%; text-align: left; margin: 5px;">
+                    <div style="display: flex;">
+                        <input style="height: 30px; margin: 0 2px;" type="search" id="site-search" name="search" aria-label="Search through site content">
+                        <button style="height: 30px; padding: 5px;">Pesquisar</button>
+                    </div>
+                </form>
+                <h2>Lançamentos</h2>
 				<img src="imagens/bone.jpg" alt="homem de boné">
 			</div>
 			<div>
@@ -42,10 +45,8 @@
 					</button>
 				</a>
 			</div>
-            <div>
-                <h2>Lançamentos</h2>
-            </div>
-            <div>
+            </section>
+            <section>
                 <h2>Formas de pagamento</h2>
                 <p>Gostou de nossos produtos? Confira as formas de pagamento que aceitamos na loja.<br>
                 <ul>
@@ -61,11 +62,17 @@
                         </span></li>
                 </ul>
                 </p>
-                
-                
-                
-            </div> 
 		</section>
+        <section>
+            <h2 class="destaque">Cadastre seu e-mail para receber ofertas</h2>
+        <form name="Contato" method="POST" action="#">
+        <span>
+            <label for="email">E-mail*:</label>
+            <input type="email" id="email" size="40" aria-required="true"/>
+        </span>
+            <input class="botao" type="submit" value="Enviar"/>
+        </form>
+        </section>
     </main>
 
     <footer>
